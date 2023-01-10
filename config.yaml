@@ -1,0 +1,4 @@
+configurationset:
+  - configuration:
+      name: curl_import_config
+      authentication_13a8ef6475: namur::stepzen.net+1000::b0d5d8b022642e67f5215e5c45e987a356faa995e1b0ef32ea14d6e6d3d20536
