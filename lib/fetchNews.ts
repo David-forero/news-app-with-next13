@@ -62,11 +62,6 @@ const fetchNews = async (
     }
   );
 
-  console.log(
-    "Loading new data from api for categories 👉️",
-    category,
-    keywords
-  );
 
   const newResponse = await res.json();
 

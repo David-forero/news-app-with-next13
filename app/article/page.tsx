@@ -5,10 +5,13 @@ type Props = {
   searchParams?: Article;
 };
 
-const ArticlePage = ({ searchParams }: any) => {
-  console.log(searchParams);
-  
- 
+const ArticlePage = ({ searchParams }: Props) => {
+  if (
+    (searchParams && Object.entries(searchParams).length === 0) ||
+    !searchParams
+  ) {
+    return notFound();
+  }
 
   const article: Article = searchParams;
 
